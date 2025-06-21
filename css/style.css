@@ -1,0 +1,356 @@
+/* OBS: rever tudo para diminuir as linhas de código */
+
+
+
+* {
+    font-family: "Exo 2", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #F5F5F5;
+}
+
+/* transição do tema */
+body, header, .imagens_header button, .bloco, .formulario, .formulario input, .formulario textarea, .formulario select, .divisor_h, .divisor, footer, h2, h3, p, li, #nome, label, option, select, input, .links_paginas a, #ciber, footer p {
+    transition: all 0.3s ease;
+}
+html {
+    background-color: #F5F5F5;
+    color: black;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+/* Parte do header */
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15% ;
+    background-color: rgb(235, 235, 235);
+}
+.logo_upf{
+   max-width: 50px;
+   justify-content: flex-start;
+}
+.links_paginas a{
+    margin: 0 15px;
+    padding: 2px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    transition: .2s;
+}
+.links_paginas a:hover{
+    color: #51a8b1;
+    transform: scale(1.05);
+}
+.imagens_header img{
+    width: 20px;
+    margin: 0 10px;
+}
+.imagens_header button{
+    border: none;
+    background-color: rgb(235, 235, 235);
+}
+
+/* Parte da apresentação */
+
+.fundo {
+    background-image: url("../img/wpp site cibersegurança.png");
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: 20% auto;
+    height: 100vh;
+}
+.divisor {
+    width: 2px;              
+    height: 100px;           
+    background-color: #000; 
+    margin: 0 20px;         
+}
+.tela_inicial{
+    padding: 0 15%;
+    display: flex;
+    align-items: center;
+    height: calc(100vh - 200px);
+}
+.tela_inicial>div>h1{
+    font-size: 60px;
+}
+.tela_inicial>div>h2{
+    font-size: 40px;
+}
+.tela_inicial>div{
+    margin: 0 20px;
+}
+#cadeado{
+    height: 60px;
+}
+.destaque_azul{
+    color: #51a8b1;
+}
+
+/* Conteudo pagina home */
+
+main {
+    padding: 0 15% 0 15%;
+    margin-top: 20px;
+}
+.informacoes {
+    padding: 40px;
+    overflow: hidden;
+}
+.informacoes p {
+    font-size: 18px;
+    text-indent: 30px;
+    line-height: 25px;
+    padding-right: 20px;
+}
+.informacoes ul {
+    padding-left: 50px;
+    font-size: 18px;
+    line-height: 25px;
+}
+.informacoes img {
+    max-width: 120px;
+    width: 120px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    float: right;
+    height: auto;
+    display: block;
+    color: #51a8b1;
+}
+.container > div > h3 {
+    font-size: 40px;
+    margin-top: 25px;
+}
+
+/* Divisor */
+
+.divisor_h{
+    height: 2px;
+    background-color: #d4d4d4;
+    margin: 0 10px;
+    margin-top: 20px;
+}
+
+/* Imagem esquerda wpp */
+
+.fundoepd{
+    background-image: linear-gradient(rgba(245, 245, 245, 0.8), rgba(245, 245, 245, 0.8)), url("../img/wpp\ site\ cibersegurança\ epd.png");
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    background-size: 25% auto;
+}
+
+/* Itens de prevenção */
+
+.bloco {
+    background-color: rgb(235, 235, 235);
+    border-radius: 25px;
+    margin: 15px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    flex: 1 1 calc(33.33% - 30px);
+}
+.bloco img{
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    display: flex;
+    color: #51a8b1;
+}
+.itens_segurança{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.bloco h2{
+    margin: 15px 0 15px 0;
+}
+.quadros h3{
+    margin-bottom: 25px;
+}
+.quadros p{
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+}
+/* Parte do Footer*/
+
+footer {
+    background-color: rgb(235, 235, 235);
+    padding: 40px 0;
+    text-align: center;
+    margin-top: 40px;
+}
+.footer-container{
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+footer p{
+    color: black;
+    margin-bottom: 20px;
+}
+.footer-icons img {
+    color: black;
+    margin: 10px 10px;
+    font-size: 24px;
+    width: 30px;
+    height: 30px;
+}
+
+/* Segunda página (Sobre) */
+
+#foto_perfil{
+    max-width: 300px;
+    border-radius: 50%;
+    margin-left: 60%
+}
+.linguagem{
+    justify-content: space-between;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    padding: 2px 7px;
+    margin: 10px;
+    border-radius: 10px;
+}
+#python{
+    background-color: #4584b6;
+}
+#html{
+    background-color: #FFA500;
+}
+#css{
+    background-color: #007ACC;
+}
+#javascript{
+    background-color: #F7DF1E;
+    color: #000;
+}
+
+/* Terceira pagina (Contato) */ 
+
+.formulario{
+    background-color: rgb(235, 235, 235);
+    border-radius: 15px;
+    padding: 30px;
+    width: 600px;
+    max-width: 600px;
+    margin: auto;
+    margin-top: 40px;
+}
+
+.formulario h2{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.formulario form{
+    display: flex;
+    flex-direction: column;
+}
+input{
+    color: black;
+}
+option, select{
+    color: black;
+}
+.grupo-genero {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+.formulario label{
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.formulario input, .formulario textarea, .formulario select{
+    margin-bottom: 20px;
+    padding: 10px;
+    border:none;
+    border-radius: 8px;
+    background-color: rgb(220, 220, 220);
+    color: black;
+    font-size: 16px;
+}
+.formulario button{
+    padding: 12px;
+    background-color: #51a8b1;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+    font-size: 16px; 
+    cursor: pointer;
+    transition: background-colour 0.3s ease;
+}
+.formulario button:hover{
+    background-color: #49888f;
+}
+
+/* notificação da pagina em const */
+.notificacao {
+  position: absolute;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 9999;
+  animation: fadeIn 0.3s ease-out;
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to   { opacity: 1; transform: translateY(0);     }
+}
+@keyframes fadeOut {
+  from { opacity: 1; }
+  to   { opacity: 0; }
+}
+.notificacao.fadeOut {
+  animation: fadeOut 0.3s ease-out forwards;
+}
+.notificacao img {
+  max-width: 100px;
+  margin-bottom: 10px;
+}
+.notificacao p {
+  margin: 0;
+  font-size: 16px;
+  color: #333;
+}
+
+/* Parte acessibilidade */
+.acessibilidade {
+    font-size: 1.3em;
+}
+.acessibilidade h1 {
+    font-size: 2.5em;
+}
+.acessibilidade h2 {
+    font-size: 1.3em;
+}
+.acessibilidade h3 {
+    font-size: 1.7em;
+}
+.acessibilidade p, .acessibilidade li, .acessibilidade a, .acessibilidade button {
+    font-size: 1.2em;
+}
+.acessibilidade input,
+.acessibilidade textarea,
+.acessibilidade select,
+.acessibilidade button {
+    font-size: 1.02em;
+    padding: 10px;
+    transform: scale(1.02);
+}

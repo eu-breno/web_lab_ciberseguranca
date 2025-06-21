@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre este site</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    </script>
+</head>
+<body>
+    <header>
+        <a href="https://www.upf.br/" target="_blank"><img src="img/logo UPF.png" alt="Logo da UPF" class="logo_upf"></a>
+        <div class="links_paginas">
+            <a href="index.html">Home</a>
+            <a href="sobre.html">Sobre</a>
+            <a href="contato.html">Contato</a>
+        </div>
+        <div class="imagens_header">
+            <button onclick="mudarTema()">
+                <img src="img/circle-half.svg" alt="Alterar o Tema: Dark/White">
+            </button>
+            <button onclick="acessibilidadeNavegador()">
+                <img src="img/person-arms-up.svg" alt="Acessibilidade">
+            </button>
+        </div>
+    </header>
+    <div class="fundo">
+        <section class="tela_inicial">
+            <div >
+                <h3>Desenvolvido por:</h3>
+                <h1 id="nome">Breno Olliari</h1>
+                <p>Estudande do 1º período de Ciências da Computação (UPF)</p><br>
+                <p><span id="python" class="linguagem">Python</span> <span id="html" class="linguagem">HTML</span><span id="css" class="linguagem">CSS</span><span id="javascript" class="linguagem">Javascript</span></p>
+            </div>
+            <div>
+                <img src="img/Profile.jpeg" alt="Foto de perfil" id="foto_perfil">
+            </div>
+        </section>
+    </div>
+    <main>
+        <section class="container">
+            <div>
+                <div class="divisor_h"></div>
+                <h3>Sobre esse trabalho</h3>
+                <div class="informacoes">
+                    <div>
+                        <p>Este projeto foi desenvolvido como parte da atividade de curricularização da disciplina de Web Lab (CCC277), seguindo a proposta de transformar o conteúdo das cartilhas de segurança da informação em um website interativo.</p>
+                        <p>O objetivo foi criar um site que, além de transmitir informações importantes sobre segurança digital, também apresenta um layout responsivo, páginas organizadas, além de ter a implementação de recursos como o modo Dark/Light Theme e a opção de acessibilidade, que permite aumentar o tamanho das fontes.</p>
+                        <p>O site conta com pelo menos três páginas principais: a página inicial com o conteúdo sobre cibersegurança, a página "Sobre" (página atual), com a apresentação do conteúdo abordado, e uma página de contato com formulário funcional que exibe um alerta ao ser enviado. Todo o código foi estruturado com HTML com tags semânticas e CSS e JavaScript separados em pastas próprias, além de imagens organizadas e o uso de uma fonte customizada do Google Fonts.</p>
+                        <p>Confira o arquivo do site no <a href="https://github.com/eu-breno/web_lab_ciberseguranca/tree/main">GitHub</a>.</p>
+                    </div>
+                </div>
+                <div class="divisor_h"></div>
+                <h3>Quem sou eu</h3>
+                <div class="informacoes">
+                    <img src="img/profile_icon_azul.png" alt="Profile Icon">
+                    <div>
+                        <p>Olá mundo! Meu nome é Breno, tenho 18 anos, sou estudante de Ciência da Computação, área pela qual sempre tive grande interesse, e tive grande incentivo por parte de uma professora.</p>
+                        <p>Atualmente, trabalho como menor aprendiz na CBnet, onde atuo como Auxiliar Administrativo, o que me proporciona experiência prática e contato com o ambiente corporativo desde cedo.</p>
+                        <p>Além disso, colaboro ocasionalmente com o trabalho do meu pai, que é autônomo no ramo da Comunicação Visual, eu auxilio principalmente na parte da produção e instalação de adesivos, placas e camisetas personalizadas, além de operar equipamentos de corte e impressão, e contato com softwares de design gráfico e modelagem.</p>
+                        <p>No meu tempo livre eu gosto de tocar guitarra, andar de skate, escutar música, praticar atividades fisicas como jogar futebol e academia.</p>
+                       
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2025 Breno Olliari • Todos os direitos reservados</p>
+            <div class="footer-icons">
+                <a href="https://github.com/eu-breno" target="_blank"><img src="img/github.svg" alt=" Meu perfil no GitHub"></a>
+                <a href="https://instagram.com/brenoolliari" target="_blank"><img src="img/instagram.svg" alt="Meu perfil no Instagram"></a>
+             </div>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
